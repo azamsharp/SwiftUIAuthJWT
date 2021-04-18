@@ -11,6 +11,12 @@
 		8D1C1C482625ED780026A45A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1C1C472625ED780026A45A /* ContentView.swift */; };
 		8D1C1C4A2625ED790026A45A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1C1C492625ED790026A45A /* Assets.xcassets */; };
 		8D1C1C4D2625ED790026A45A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1C1C4C2625ED790026A45A /* Preview Assets.xcassets */; };
+		8D1C1C572625F17A0026A45A /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1C1C562625F17A0026A45A /* View+Extensions.swift */; };
+		8D4167DA2627852900C03817 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4167D92627852900C03817 /* LoginViewModel.swift */; };
+		8D4167DE26278A6400C03817 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4167DD26278A6400C03817 /* Webservice.swift */; };
+		8D4167E22627E01400C03817 /* NotAuthorizedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4167E12627E01400C03817 /* NotAuthorizedView.swift */; };
+		8D4167E52627E0A500C03817 /* AccountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4167E42627E0A500C03817 /* AccountListViewModel.swift */; };
+		8D4167E92627E0CF00C03817 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4167E82627E0CF00C03817 /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		8D1C1C492625ED790026A45A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D1C1C4C2625ED790026A45A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D1C1C4E2625ED790026A45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1C1C562625F17A0026A45A /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		8D4167D92627852900C03817 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8D4167DD26278A6400C03817 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		8D4167E12627E01400C03817 /* NotAuthorizedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotAuthorizedView.swift; sourceTree = "<group>"; };
+		8D4167E42627E0A500C03817 /* AccountListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewModel.swift; sourceTree = "<group>"; };
+		8D4167E82627E0CF00C03817 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +64,16 @@
 		8D1C1C442625ED780026A45A /* SwiftClient */ = {
 			isa = PBXGroup;
 			children = (
+				8D4167E72627E0C400C03817 /* Models */,
+				8D4167DC26278A5800C03817 /* Services */,
+				8D4167D72627842200C03817 /* View Models */,
+				8D1C1C552625F16B0026A45A /* Extensions */,
 				8D1C1C452625ED780026A45A /* SwiftClientApp.swift */,
 				8D1C1C472625ED780026A45A /* ContentView.swift */,
 				8D1C1C492625ED790026A45A /* Assets.xcassets */,
 				8D1C1C4E2625ED790026A45A /* Info.plist */,
 				8D1C1C4B2625ED790026A45A /* Preview Content */,
+				8D4167E12627E01400C03817 /* NotAuthorizedView.swift */,
 			);
 			path = SwiftClient;
 			sourceTree = "<group>";
@@ -67,6 +84,39 @@
 				8D1C1C4C2625ED790026A45A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D1C1C552625F16B0026A45A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8D1C1C562625F17A0026A45A /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8D4167D72627842200C03817 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D4167D92627852900C03817 /* LoginViewModel.swift */,
+				8D4167E42627E0A500C03817 /* AccountListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		8D4167DC26278A5800C03817 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8D4167DD26278A6400C03817 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8D4167E72627E0C400C03817 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D4167E82627E0CF00C03817 /* Account.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D4167E52627E0A500C03817 /* AccountListViewModel.swift in Sources */,
+				8D4167DA2627852900C03817 /* LoginViewModel.swift in Sources */,
 				8D1C1C482625ED780026A45A /* ContentView.swift in Sources */,
+				8D1C1C572625F17A0026A45A /* View+Extensions.swift in Sources */,
+				8D4167DE26278A6400C03817 /* Webservice.swift in Sources */,
+				8D4167E92627E0CF00C03817 /* Account.swift in Sources */,
 				8D1C1C462625ED780026A45A /* SwiftClientApp.swift in Sources */,
+				8D4167E22627E01400C03817 /* NotAuthorizedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
